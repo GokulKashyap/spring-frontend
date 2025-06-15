@@ -1,0 +1,80 @@
+/* CalendarView.css */
+abbr[title] {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+}
+
+.calendar-amount {
+  font-size: 11px;
+  color: green;
+}
+
+.calendar-container {
+  background: var(--panel-bg);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.budget-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.budget-indicator {
+  margin-top: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+.react-calendar {
+  background-color: var(--calendar-bg);
+  color: var(--calendar-text);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.react-calendar__tile {
+  background: none;
+  color: var(--calendar-text);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.react-calendar__tile--active {
+  background-color: #007bff;
+  color: white;
+}
+
+.react-calendar__tile:enabled:hover {
+  background-color: var(--calendar-hover);
+  color: var(--calendar-text);
+  cursor: pointer;
+}
+
+.react-calendar__navigation button {
+  background: none;
+  color: var(--calendar-text);
+  font-weight: bold;
+}

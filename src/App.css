@@ -1,0 +1,54 @@
+:root {
+  --bg: #fff;
+  --text: #333;
+  --panel-bg: #f0f0f0;
+}
+
+.dark-theme {
+  --bg: #121212;
+  --text: #eee;
+  --panel-bg: #1e1e1e;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  display: flex;
+  background: var(--panel-bg);
+}
+.left-panel, .right-panel {
+  padding: 10px;
+  flex: 1;
+}
+button {
+  background: var(--panel-bg);
+  color: var(--text);
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+:root {
+  --bg: #fff;
+  --text: #333;
+  --panel-bg: #f0f0f0;
+  --calendar-bg: #fff;
+  --calendar-text: #000;
+  --calendar-hover: #e6e6e6;
+}
+
+.dark-theme {
+  --bg: #121212;
+  --text: #eee;
+  --panel-bg: #1e1e1e;
+  --calendar-bg: #1e1e1e;
+  --calendar-text: #eee;
+  --calendar-hover: #333;
+}
