@@ -14,7 +14,7 @@ function Login({ onLogin }) {
       const res = await axios.post('https://spring-backend-8.onrender.com/api/auth/login', {
   email,
   password
-}, {
+},{ withCredentials: true}, {
   headers: {
     'Content-Type': 'application/json'
   }

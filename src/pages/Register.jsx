@@ -15,8 +15,7 @@ function Register() {
       await axios.post('https://spring-backend-8.onrender.com/api/auth/register', {
         email,
         password,
-        withCredentials: true
-      });
+      },{ withCredentials: true});
       // On successful registration, navigate to login
       navigate('/login');
     } catch (err) {
