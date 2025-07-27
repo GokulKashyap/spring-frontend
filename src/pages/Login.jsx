@@ -11,7 +11,7 @@ function Login({ onLogin }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://spring-backend-1-6rrs.onrender.com/api/auth/login', {
+      const res = await axios.post('https://spring-backend-8.onrender.com/api/auth/login', {
   email,
   password
 }, {

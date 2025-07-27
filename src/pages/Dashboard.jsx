@@ -24,7 +24,7 @@ function Dashboard({ onLogout }) {
 
   const fetchExpenses = async () => {
     try {
-      const res = await axios.get('https://spring-backend-1-6rrs.onrender.com/expenses', {
+      const res = await axios.get('https://spring-backend-8.onrender.com/expenses', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setExpenses(res.data);
@@ -41,13 +41,13 @@ function Dashboard({ onLogout }) {
     e.preventDefault();
     try {
       if (isEditing) {
-        await axios.put(`https://spring-backend-1-6rrs.onrender.com/expenses/${editingId}`, formData, {
+        await axios.put(`https://spring-backend-8.onrender.com/expenses/${editingId}`, formData, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setIsEditing(false);
         setEditingId(null);
       } else {
-        await axios.post('https://spring-backend-1-6rrs.onrender.com/expenses', formData, {
+        await axios.post('https://spring-backend-8.onrender.com/expenses', formData, {
           headers: { Authorization: `Bearer ${token}` },
         });
       }
@@ -78,7 +78,7 @@ function Dashboard({ onLogout }) {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://spring-backend-1-6rrs.onrender.com/expenses/${id}`, {
+      await axios.delete(`https://spring-backend-8.onrender.com/expenses/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       fetchExpenses();

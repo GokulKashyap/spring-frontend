@@ -12,7 +12,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://spring-backend-1-6rrs.onrender.com/api/auth/register', {
+      await axios.post('https://spring-backend-8.onrender.com/api/auth/register', {
         email,
         password
       });

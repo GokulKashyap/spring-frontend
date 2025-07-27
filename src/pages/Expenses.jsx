@@ -8,7 +8,7 @@ function Expenses() {
     const fetchExpenses = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('https://spring-backend-1-6rrs.onrender.com/expenses', {
+        const res = await axios.get('https://spring-backend-8.onrender.com/expenses', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
